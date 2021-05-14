@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Articles from './Articles'
+// import Content from './Content';
+// const ArticlesContent = {
+//   title: "Media",
+//   brief: "Website for post",
+//   content: "dyucdufhdjdsv dhvdnvorjvorvj"
+// }
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Articles title="header" brief="brief"  >
+        <p>hello world</p>
+        <p>how are you</p>
+        
+      </Articles>
     </div>
   );
 }
