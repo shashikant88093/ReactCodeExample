@@ -6,7 +6,9 @@ export default function Articles(props) {
     return (
         <div>
             <Header title={props.title} brief={props.brief} />
-            <Content >{props.children}</Content>
+           {props.content({blogText:"Hello World"})}
+           {/* {props.content} */}
+
         </div>
     )
 }
